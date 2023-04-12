@@ -57,7 +57,7 @@ exports.postRegister = async (req, res) => {
         <p>Để hoàn tất việc đăng ký, vui lòng nhấn vào nút bên dưới</p>
         <div style="text-align: center;margin:100px"><a style="text-decoration: none;padding:20px;background: black; color: white" href="http://localhost:3000/verify?token=${encryptedString}">Xác nhận</a></div>`;
         transporter.sendMail({
-            from: "Lê Minh Thủy", // sender address
+            from: "Đặng Minh ", // sender address
             to: req.body.email, // list of receivers
             subject: "Đăng ký tài khoản thành công ✔", // Subject line
             text: "Chúc mừng bạn đã đăng ký tài khoản từ trang web của chúng tôi", // plain text body
@@ -80,7 +80,7 @@ exports.postSendMail = async (req, res) => {
             <p>Để hoàn tất việc xác nhận, vui lòng nhấn vào nút bên dưới</p>
             <div style="text-align: center;margin:100px"><a style="text-decoration: none;padding:20px;background: black; color: white" href="http://localhost:3000/verify?token=${encryptedString}">Xác nhận</a></div>`;
             transporter.sendMail({
-                from: "Lê Minh Thủy", // sender address
+                from: "Đặng Minh Đức", // sender address
                 to: exitsCustomer.email, // list of receivers
                 subject: "Xác Nhận Tài Khoản ✔", // Subject line
                 text: "Đây là thư gửi đến bạn để xác nhận tài khoản", // plain text body
